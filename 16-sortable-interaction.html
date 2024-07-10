@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css" />
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css" />
+
+    <style>
+        #sortable{
+            border: 2px solid black;
+            height: 20px;
+            width: 100px;
+            margin: 10px;
+            text-align: center; 
+            list-style: none;
+        }
+        #img{
+          list-style: none;
+        }
+    </style>
+
+  </head>
+  <body>
+    <h1>Sortable Interaction in jquery UI</h1>
+
+    <div>
+      <ul class="sort">
+        <li id="sortable">Item 1</li>
+        <li id="sortable">Item 2</li>
+        <li id="sortable">Item 3</li>
+        <li id="sortable">Item 4</li>
+        <li id="sortable">Item 5</li>
+        <li id="sortable">Item 6</li>
+        <li id="sortable">Item 7</li>
+        <li id="sortable">Item 8</li>
+        <li id="sortable">Item 9</li>
+        <li id="img"><img src="/Naruto.jpg" alt="" width="50"></li>
+      </ul>
+    </div>
+
+
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+    integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="16-jq.js"></script>
+  <!-- Add this jquery ui file only after the plain jquery file always-->
+  <script src="jquery-ui/jquery-ui.js" type="text/javascript"></script>
+</html>
