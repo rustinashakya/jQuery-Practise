@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css" />
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css" />
+
+    <style>
+        body{
+            background-color: azure;
+            margin-top: 150px;
+        }
+        .container{
+            padding: 20px;
+            width: 450px;
+            margin: 0 auto;
+            margin-top: 40px;
+            background-color: rgb(202, 241, 239);
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px 3px rgb(207, 207, 207);
+        }
+        form{
+            display: flex;
+            justify-content: space-between;
+        }
+        input{
+            padding: 4px 15px 4px 5px;
+            width: 330px;
+        }
+        #button{
+            display: inline-block;
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            padding: 5px 15px;
+        }
+        #button:hover{
+            cursor: pointer; 
+            opacity: 8;
+            background-color: rgb(3, 88, 3);
+        }
+        ul{
+            padding-left: 20px;
+            font-weight: bold;
+        }
+        ul li{
+            margin-bottom: 5px;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: rgb(124, 220, 215);
+            color: black;
+            font-weight: bolder;
+            list-style: square;
+        }
+        ul li:nth-child(even){
+            margin-bottom: 5px;
+            background-color:  rgb(110, 199, 194);
+            color: black;
+            font-weight: bolder;
+        }
+        .strike{
+            text-decoration: line-through;
+        }
+        li:hover{
+            cursor: pointer;
+        }
+
+
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+        <h2>To Do List Using jQuery</h2>
+        <p><b><i>Double click to delete an item and drag to reorder.</i></b></p>
+
+        <form name="toDoList">
+            <input type="text" name="ListItem"> 
+            <div id="button">Add</div>
+        </form>
+        <br>
+        <ul></ul>
+    </div>
+
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+    integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="20-jq.js"></script>
+  <!-- Add this jquery ui file only after the plain jquery file always-->
+  <script src="jquery-ui/jquery-ui.js" type="text/javascript"></script>
+</html>
